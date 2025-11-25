@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🐳 Docker React Development Environment
 
 A complete Docker-based development and production environment for React applications with hot reload, optimized builds, and production-ready deployment.
@@ -191,3 +192,6 @@ Happy coding! 🎉
 # FinalLaboratory1
 Portfolio
 >>>>>>> a80f9d85f02b11b9dbb1edce97e9b9e63af4a524
+=======
+# FinalLab1Portfolio
+>>>>>>> 65b7408a1e6bb7c439e5a74b4a71d179bcfe2d4b
