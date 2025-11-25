@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐳 Docker React Development Environment
 
 A complete Docker-based development and production environment for React applications with hot reload, optimized builds, and production-ready deployment.
@@ -186,3 +187,7 @@ docker-compose -f docker-compose.prod.yml logs -f react-prod
 5. **Keep Docker Desktop updated** for best performance
 
 Happy coding! 🎉
+=======
+# FinalLaboratory1
+Portfolio
+>>>>>>> a80f9d85f02b11b9dbb1edce97e9b9e63af4a524

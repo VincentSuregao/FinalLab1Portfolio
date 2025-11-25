@@ -1,0 +1,379 @@
+/* ─────────── GENERAL RESET ─────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f1624;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ─────────── NAVBAR ─────────── */
+.nav {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1320cc;
+  backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  opacity: .8;
+  transition: .3s;
+}
+
+.menu a:hover {
+  opacity: 1;
+  color: #00eaff;
+}
+
+/* Add top spacing because navbar is fixed */
+#home {
+  padding-top: 140px;
+}
+
+/* ─────────── HERO ─────────── */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 30px;
+}
+
+.hero-left {
+  max-width: 550px;
+}
+
+.hero-left h3 {
+  font-size: 1.3rem;
+  opacity: .8;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.hero-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.accent {
+  color: #00eaff;
+}
+
+.hero-left p {
+  margin: 12px 0 25px;
+  opacity: .8;
+  line-height: 1.6;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.socials a {
+  background: #1d2738;
+  padding: 10px 14px;
+  border-radius: 8px;
+  opacity: .9;
+  transition: .3s;
+}
+
+.socials a:hover {
+  background: #00eaff;
+  color: #000;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #00eaff;
+  color: #000;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* RIGHT HERO IMAGE */
+.hero-right .image-glow {
+  width: 330px;
+  height: 330px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 8px;
+  background: linear-gradient(135deg, #00eaff, #0080ff);
+  box-shadow: 0px 0px 25px #00eaff70;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* ─────────── ABOUT ─────────── */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+  background: #111b2f;
+  border-radius: 20px;
+  margin: 0 60px;
+}
+
+/* FIXED SMALLER ABOUT IMAGE */
+.about-img .image-glow {
+  width: 260px;
+  height: 260px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 8px;
+  background: linear-gradient(135deg, #00eaff, #0080ff);
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px #00eaff70;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+}
+
+.about-text h3 {
+  margin: 10px 0;
+  opacity: .9;
+}
+
+.about-text p {
+  opacity: .75;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-secondary {
+  padding: 12px 30px;
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.btn-secondary:hover {
+  background: #00eaff;
+  color: #000;
+}
+
+/* ─────────── SERVICES ─────────── */
+.services {
+  padding: 60px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: #111b2f;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 18px #00eaff33;
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00eaff66;
+}
+
+.service-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.service-card p {
+  opacity: .75;
+  margin-bottom: 15px;
+}
+
+.service-card a {
+  color: #00eaff;
+  font-weight: 600;
+}
+
+/* ─────────── PROJECTS ─────────── */
+.projects {
+  padding: 60px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: .3s;
+  box-shadow: 0 0 15px #00eaff33;
+}
+
+.project-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px #00eaff88;
+}
+
+/* ─────────── CONTACT ─────────── */
+.contact {
+  padding: 60px;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  background: #111b2f;
+  border: 2px solid #1c2436;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contact-form textarea {
+  height: 160px;
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 10px;
+}
+
+/* ─────────── FOOTER ─────────── */
+.footer {
+  text-align: center;
+  padding: 25px;
+  opacity: .6;
+}
+
+/* ─────────── RESPONSIVE ─────────── */
+@media (max-width: 950px) {
+  .hero,
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero-right .image-glow,
+  .about-img .image-glow {
+    margin: 0 auto;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* smaller about profile on mobile */
+  .about-img .image-glow {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
